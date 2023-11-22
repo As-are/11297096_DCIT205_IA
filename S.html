@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>STAFF</title>
+</head>
+<style>
+    .footer{
+        background-color:red;
+        width: 95%;
+        height: 80vh;
+        margin: auto;
+        display: flex;
+        
+    }
+    
+    .left{
+    height: 94%;
+    width: 30%;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    }
+    .left>input{
+        padding: 20px;
+        width: 20vw;
+        font-size: 1.5rem;
+        border-radius: 5px;
+        border: none;
+    }
+    button{
+        padding: 16px;
+        position: absolute;
+        width: 5vw;
+        font-size: 2rem;
+        /* background-color: rgba(0, 0, 0, 0.9); */
+        background-color: rgb(95, 94, 94);
+        color: white;
+        border: none;
+        top: 53vh;
+        left:20vw ;
+        z-index: 1000;
+        
+    }
+    .left>.input>::placeholder{
+        color: red;
+    }
+    .left>p{
+    
+    }
+    .left>li{
+        padding-top: 20px;
+    }
+    .right{
+        background-color: red;
+        display: flex;
+        gap: 3rem;
+        flex-direction: column;
+        padding: 20px;
+        justify-content: space-between;
+        width: 70%;
+    }
+    .up{
+        height: 50%;
+        display: flex;
+        flex-direction: row;
+        padding: 30px;
+        justify-content: space-between;
+    }
+    .up>section>li{
+        padding-top: 20px;
+    }
+    .up>section>li>a{
+        transition: .2s ease;
+    }
+    .up>section>li>a:hover{
+    color: rgb(143, 143, 143);
+    text-decoration: underline;
+    }
+    .down{
+        height: 50%;
+        display: flex;
+        flex-direction: row;
+        gap: 20rem;
+        padding: 30px;
+    }
+    .downleft>h2 , .downright>h2{
+        color: white;
+        font-weight: 800;
+        font-size: 2rem;
+    
+    }
+    .downleft{
+        display: flex;
+        gap: 2rem;
+        flex-direction: column;
+    }
+    .downleft>li{
+        color: white;
+        font-size: 1.8rem;
+    }
+    .right{
+        display: flex;
+        flex-direction: column;
+    }
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center
+      }
+      
+      img {
+        max-width: 500%;
+        width: 600px;
+      }
+      
+      .image {
+        flex-basis: 40%;
+      }
+      
+      .text {
+        font-size: 20px;
+        padding-left: 20px;
+      }
+</style>
+<body style="background-color: rgb(206, 218, 205);">
+    <p>
+
+    </p>
+    
+ <div class="container">
+    <div class="image">
+      <img src="images (3).jpg">
+    </div>
+    <div class="text">
+      <p>
+        Digital Arts
+At Concordia, researchers across many disciplines think critically about a rapidly-changing world. Multiple nodes of digital culture reflect and connect to mobilize engagement and innovation across culture, economy and society.
+
+Transdisciplinary research and research-creation connects artists, designers and engineers, and nurtures new ideas and challenges. Areas of investigations include:
+      </p>
+    </div>
+  </div>
+    <div class="footer">
+        <div class="left">
+            <li><a href="#">Graduate Courses(MPhil Computer Science)</a></li>
+            <li><a href="#">Graduate Courses(MSc Computer Science)</a></li>
+            <li><a href="#">Graduate Courses(PhD)</a></li>
+            <li><a href="#">Academic Calendar</a></li>
+            <li><a href="#"> Level 200 & 300 Timetable</a></li>
+            <li><a href="#">Placements For Level 200 Students</a></li>
+            <li><a href="#"> Student Complaint Form</a></li> <br>
+            <li><a href="#">Newsletter</a></li><br>
+            <li><a href="#" class="faint">Stay update with our latest</a></li><br><br>
+            <input type="text" name="" class="input" placeholder="email"><button>→</button>
+            <br><br><br><br><br><br><br><br><br><br>
+            <p style="font-size: 1.6rem !important; color: rgb(131, 130, 130) ; top: -7vh; position: relative;" >Copyright &copy;2023 All rights reserved</p>
+        </div>
+        <div class="right">
+            <div class="up">
+                <section>
+                    <li><a href="">International Students</a></li>
+                    <li><a href="">Entry Requirements</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </section>
+                <section>
+                    <li><a href="">Research</a></li>
+                    <li><a href="">Research at DCS</a></li>
+                    <li><a href="">Research Impact</a></li>
+                </section>
+                <section>
+                    <li><a href="">Libraries</a></li>
+                    <li><a href="">About The Department</a></li>
+                    <li><a href="">Introducing DCS</a></li>
+                </section>
+            </div>
+            <div class="down">
+                <section class="downleft">
+                    <h2>Contact US</h2>
+                    <p>Phone and email</p>
+                    <li> <i class="fas fa-phone"></i> +233 501 382 035</li>
+                    <li> <i class="fas fa-phone"></i> +233 501 382 035</li>
+                    <li> <i class="fas fa-envelope"></i>               dcs.ug.edu.gh</li>
+                </section>
+                <section class="downright">
+                    <h2>Location</h2>
+                    <p>University of Ghana Legon</p>
+                    <p>Campus</p>
+                    <p>Department</p>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
