@@ -4,111 +4,155 @@
     <title>EVENTS</title>
 </head>
 <style>
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        background-color: red;
+        padding: 10px;
+     }
+     a{
+       text-decoration: none;
+ 
+     }
+     
+     .container {
+       display: flex;
+       align-items: flex-end;
+       justify-content: flex-start;
+     }
+     .image {
+       flex-basis: 10%;
+     }
+     img {
+       max-width: 100%;
+     }
+     .text {
+       display: flex;
+       font-size:50px; 
+       text-align: center;
+       color:red;
+       background-color: rgb(22, 22, 172);
+     }
+     .grid-item {
+       background-color: red;
+       padding: 20px;
+       text-align: center;
+   }
     .footer{
         background-color:red;
-        width: 95%;
-        height: 80vh;
+        width: 100%;
+        height: 110vh;
         margin: auto;
         display: flex;
         
-    }
-    
-    .left{
-    height: 94%;
-    width: 30%;
-    padding: 25px;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    }
-    .left>input{
+      }
+      
+      .left{
+      height: 94%;
+      width: 30%;
+      padding: 25px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      }
+      .left>input{
         padding: 20px;
         width: 20vw;
         font-size: 1.5rem;
         border-radius: 5px;
         border: none;
-    }
-    button{
-        padding: 16px;
-        position: absolute;
-        width: 5vw;
-        font-size: 2rem;
-        /* background-color: rgba(0, 0, 0, 0.9); */
-        background-color: rgb(95, 94, 94);
-        color: white;
-        border: none;
-        top: 53vh;
-        left:20vw ;
-        z-index: 1000;
-        
-    }
-    .left>.input>::placeholder{
+      }
+      
+      .left>.input>::placeholder{
         color: red;
-    }
-    .left>p{
-    
-    }
-    .left>li{
+      }
+      
+      .left>li{
         padding-top: 20px;
-    }
-    .right{
-        background-color: red;
+        list-style: none;
+      }
+      .left>li>a{
+        text-decoration: none;
+        color: white;
+      }
+      
+      .right{
+        background-color:red;
         display: flex;
         gap: 3rem;
         flex-direction: column;
         padding: 20px;
         justify-content: space-between;
         width: 70%;
-    }
-    .up{
+      }
+      .up{
         height: 50%;
         display: flex;
         flex-direction: row;
         padding: 30px;
         justify-content: space-between;
-    }
-    .up>section>li{
+      }
+      .up>section>li{
         padding-top: 20px;
-    }
-    .up>section>li>a{
+      }
+      .up>section>li>a{
         transition: .2s ease;
-    }
-    .up>section>li>a:hover{
-    color: rgb(143, 143, 143);
-    text-decoration: underline;
-    }
-    .down{
+      }
+      .up>section>li>a:hover{
+      color: rgb(143, 143, 143);
+      text-decoration: underline;
+      }
+      .down{
         height: 50%;
         display: flex;
         flex-direction: row;
         gap: 20rem;
         padding: 30px;
-    }
-    .downleft>h2 , .downright>h2{
+      }
+      .downleft>h2 , .downright>h2{
         color: white;
         font-weight: 800;
         font-size: 2rem;
-    
-    }
-    .downleft{
+      
+      }
+      .downleft{
         display: flex;
-        gap: 2rem;
-        flex-direction: column;
-    }
-    .downleft>li{
+        gap: 1rem; 
+      flex-direction: column;
+      }
+      .downleft>li{
         color: white;
-        font-size: 1.8rem;
-    }
-    .right{
+        font-size: 1rem;
+      }
+      .right{
         display: flex;
         flex-direction: column;
-    }
+      }
+    
+      .vs{
+        width: 50%;
+        height: fit-content;
+        position: relative;
+        overflow: hidden;
+        margin-right: auto;
+        margin-left: auto;
+        }
 </style>
 <body style="background-color: rgb(206, 218, 205);">
+    <div class="grid-container">
+        <div class="grid-item"><a href="file.html">HOME</a></div>
+        <div class="grid-item"><a href="A.html">ABOUT</a></div>
+        <div class="grid-item"><a href="E.html">EVENTS</a></div>
+        <div class="grid-item"><a href="C.html">COURSES</a></div>
+        <div class="grid-item"><a href="S.html">RESEARCH</a></div>
+        <div class="grid-item"><a href="SS.html">SCHEDULES</a></div>
+     </div>
+     
     <p style="font-size:25px; color:black; text-align:left;">
      UPCOMING EVENTS
     </p>
-    <img src="Screenshot 2023-11-21 124206.png" alt="events">
+    <img src="Screenshot 2023-11-21 124206.png" alt="events" style="width: 100%;" height="500px">
+    <br> <br> <br> <br>
     <div class="footer">
         <div class="left">
             <li><a href="#">Graduate Courses(MPhil Computer Science)</a></li>
@@ -120,9 +164,9 @@
             <li><a href="#"> Student Complaint Form</a></li> <br>
             <li><a href="#">Newsletter</a></li><br>
             <li><a href="#" class="faint">Stay update with our latest</a></li><br><br>
-            <input type="text" name="" class="input" placeholder="email"><button>→</button>
+            <input type="text" name="" class="input" placeholder="email">
             <br><br><br><br><br><br><br><br><br><br>
-            <p style="font-size: 1.6rem !important; color: rgb(131, 130, 130) ; top: -7vh; position: relative;" >Copyright &copy;2023 All rights reserved</p>
+            <p style="font-size: 1.5rem !important; color: rgb(131, 130, 130) ; top: -23vh; position: relative;" >Copyright &copy;2023 All rights reserved</p>
         </div>
         <div class="right">
             <div class="up">
@@ -148,7 +192,8 @@
                     <p>Phone and email</p>
                     <li> <i class="fas fa-phone"></i> +233 501 382 035</li>
                     <li> <i class="fas fa-phone"></i> +233 501 382 035</li>
-                    <li> <i class="fas fa-envelope"></i>                dcs.ug.edu.gh</li>
+                    <li> <i class="fas fa-envelope"><
+                      i>dcs.ug.edu.gh</li>
                 </section>
                 <section class="downright">
                     <h2>Location</h2>
@@ -158,6 +203,6 @@
                 </section>
             </div>
         </div>
-    </div>
+      </div>
 </body>
 </html>
